@@ -1,5 +1,3 @@
-# 2198 is not the correct answer: too high
-# 1457 is not the correct answer: too low
 
 
 board = []
@@ -41,8 +39,8 @@ board.append(filler)
 
 # print(board)
 
-for i in range(1, len(board)-1): # row
-    for j in range(1, len(board[i])-1): # colum
+for i in range(1, len(board)): # row
+    for j in range(1, len(board[i])): # colum
         adjacent_rolls = 0 
         if board[i][j]:
             # check left and right
@@ -61,6 +59,7 @@ for i in range(1, len(board)-1): # row
             
             # check left and right (down)
             # print(j+1)
+            #
             
             if board[i+1][j+1]:
                 adjacent_rolls += 1

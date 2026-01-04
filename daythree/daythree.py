@@ -1,9 +1,4 @@
 # find highest possible value in arranged order 
-# 16948 is not the right number: too low
-# 17415 is not the right number: too high
-# 17364 is not the right number: too low
-# 17411 is not the right number
-# 17408 <-- correct
 
 def highest_value(number):
     first_digit = 0

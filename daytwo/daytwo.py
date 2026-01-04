@@ -3,7 +3,6 @@ total = 0
 
 with open("input2.txt", "r") as file:
     ids = file.read().split(",")
-    # ids = ["824824821-824824824"]
 
 
 def find_matching(number):
@@ -47,7 +46,6 @@ for id in ids:
         #     print("dupe one: " + str(dupe))
         #     print("dupe two: " + str(dupe2))
         #     # print(dupe2)
-        #     if dupe == d35993321906upe2:
         #         if (j+len(dupe) == len(str(i))):
         #             total += i
         #         print(j+len(str(dupe)))
