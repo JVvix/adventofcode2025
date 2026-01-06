@@ -1,4 +1,8 @@
-# find highest possible value in arranged order 
+#!/usr/bin/env python
+# Faye Ly 2026-01-05
+# Advent of Code 2025
+# https://adventofcode.com/2025/day/3
+# find highest p in range(1,) ssible value in arranged order 
 
 def highest_value(number):
     first_digit = 0

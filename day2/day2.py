@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# Faye Ly 2026-01-05
+# Advent of Code 2025
+# https://adventofcode.com/2025/day/2
+
+
 total = 0 
 
 

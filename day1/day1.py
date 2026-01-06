@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+# Faye Ly 2026-01-05
+# Advent of Code 2025
+# https://adventofcode.com/2025/day/1
+
 directions = ["L68", "L30", "R48", "L5", "R60", "L55", "L1", "L99", "R14", "L82"]
 current_dial = 50
 direction = None
