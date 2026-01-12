@@ -92,4 +92,4 @@ for i in range(len(new_values)):
     print(operators[i].join(new_values[i]))
     total += eval(operators[i].join(new_values[i]))
 
-print(total)
+# print(total)
