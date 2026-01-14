@@ -5,7 +5,7 @@
 # 2026-01-12
 
 # part 1
-# 18:38 to 18:38
+# 18:38 to 20:41
 
 import math
 from collections import Counter
@@ -30,11 +30,11 @@ for i in range(len(coordinates)):
 
 distances.sort()
 
-distances = distances[:1000]
+# distances = distances[:1000]
 # distances = distances[:10]
 print(len(distances))
 
-for i in range(len(distances)):
+for i in range(1001):
     start = groups[distances[i][1]]
     end = groups[distances[i][2]]
     for j in range(len(groups)):
@@ -66,3 +66,22 @@ for i in range(len(group_counts)-3, len(group_counts)):
     product = product * group_counts[i]
 
 print(product)
+
+# 2026-01-13
+# part 2
+# 16:16 to 16:45
+
+index = 0
+
+while len(set(groups)) != 1:
+    index += 1
+    start = groups[distances[index][1]]
+    end = groups[distances[index][2]]
+    for j in range(len(groups)):
+        if groups[j] == end:
+            groups[j] = start
+    print(len(set(groups)))
+    if len(set(groups)) == 1:
+        print(coordinates[distances[index][1]])
+        print(coordinates[distances[index][2]])
+        print(int(coordinates[distances[index][1]][0]) * int(coordinates[distances[index][2]][0]))
